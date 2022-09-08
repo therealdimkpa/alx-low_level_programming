@@ -12,7 +12,7 @@ int main(void)
 
 	long c;
 
-	long int d;
+	long long int d;
 
 	float e;
 
