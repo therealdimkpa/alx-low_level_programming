@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-
 /**
 * main - Entry
 *
 * Return: 0 if successful
-*
 */
 
 int main(void)
@@ -16,6 +14,5 @@ int main(void)
 	{
 		putchar(start);
 		putchar('\n');
-		char++;
 	}  return (0);
 }
