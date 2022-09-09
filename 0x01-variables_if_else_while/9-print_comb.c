@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 
+
 /**
 * main - entry
 *
@@ -15,7 +16,7 @@ int main(void)
 	{
 		putchar(item);
 
-		if (item != 9)
+		if (item != '9')
 		{
 			putchar(',');
 			putchar(' ');
