@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+
+
+
 /**
 * main - entry
 *
@@ -8,13 +11,17 @@
 
 int main(void)
 {
-	for (char ch = 'a'; ch <= 'z'; ch++)
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-	if (ch == 'e' || ch == 'q')
-		continue;
-	else
+		if (ch == 'e' || ch == 'q')
+			continue;
+		else
+		{
 		putchar(ch);
 		putchar('\n');
+		}
 	} return (0);
 }
 

@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
 * main - Entry
 *
@@ -9,7 +10,9 @@
 
 int main(void)
 {
-	for (char start = 'a'; start  <= 'z'; start++)
+	char start;
+
+	for (start = 'a'; start  <= 'z'; start++)
 	{
 		putchar(start);
 		putchar('\n');

@@ -8,7 +8,9 @@
 
 int main(void)
 {
-	for (int item = 0; item <= 9; item++)
+	int item;
+
+	for (item = 0; item <= 9; item++)
 	{
 		putchar(item);
 
