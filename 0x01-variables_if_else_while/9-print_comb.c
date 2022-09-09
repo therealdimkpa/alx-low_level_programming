@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
 * main - entry
 *
@@ -10,7 +11,7 @@ int main(void)
 {
 	int item;
 
-	for (item = 0; item <= 9; item++)
+	for (item = '0'; item <= '9'; item++)
 	{
 		putchar(item);
 
