@@ -2,7 +2,8 @@
 
 
 /**
-* print_sum - entry
+* main - entry
+*
 * Return: 0
 */
 
@@ -21,5 +22,5 @@ for (start = 1; start < max; start++)
 	}
 printf("%d\n", sum);
 
-return 0;
+return (0);
 }
