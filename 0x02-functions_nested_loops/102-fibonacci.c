@@ -8,9 +8,13 @@
 int main(void)
 {
 int val1 = 1;
+
 int val2 = 2;
 
 int count = 0;
+
+printf("%i, ", val1);
+printf("%i, ", val2);
 
 while (count < 50)
 	{
