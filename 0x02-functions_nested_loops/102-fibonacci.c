@@ -7,14 +7,18 @@
 
 int main(void)
 {
-int lastvalue = 1;
+int val1 = 1;
+int val2 = 2;
 
 int count = 0;
 
 while (count < 50)
 	{
+	int lastvalue = val1 + val2;
+	
 	printf("%i, ", lastvalue);
-	lastvalue += lastvalue;
+	val1 = val2;
+	val2 = lastvalue;
 	count++;
 	}
 
