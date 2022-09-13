@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
 * print_sign - entry
 *
@@ -22,7 +23,7 @@ else if (n > 0)
 	return (1);
 	}
 
-else (n < 0)
+else
 	{
 	_putchar('-');
 	return (-1);
