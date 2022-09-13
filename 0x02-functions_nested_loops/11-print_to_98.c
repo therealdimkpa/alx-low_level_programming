@@ -19,8 +19,7 @@ if (number > 98)
 
 else
 	for (count = number; count < 98; ++count)
-
-printf("%d, ", count);
+		printf("%d, ", count);
 
 printf("98\n");
 }
