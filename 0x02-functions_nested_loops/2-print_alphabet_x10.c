@@ -17,5 +17,6 @@ while (loop < 10)
 		_putchar(item);
 	if (loop != 9)
 		_putchar('\n');
+	loop++;
 	}
 }
