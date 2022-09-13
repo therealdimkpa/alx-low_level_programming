@@ -22,7 +22,7 @@ else if (n > 0)
 	}
 else
 	{
-	putchar('-')
+	putchar('-');
 	return (-1);
 	}
 }
