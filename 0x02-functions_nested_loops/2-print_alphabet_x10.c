@@ -15,8 +15,7 @@ while (loop < 10)
 	{
 	for (item = 'a'; item <= 'z'; item++)
 		_putchar(item);
-	if (loop != 9)
-		_putchar('\n');
+	_putchar('\n');
 	loop++;
 	}
 }
