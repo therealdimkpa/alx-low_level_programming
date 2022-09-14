@@ -16,10 +16,12 @@ for (start = 0; start <= 9; start++)
 		{
 		int result = stop * start;
 
-		if (start * (stop+1) < 10)
-			printf("%i, ", result);
+		if (start == 0)
+			printf("%i", result);
+		if (result > 10)
+			printf(",  %i,", result);
 		else
-			printf("%i, ", result);
+			printf(", %i", result);
 		}
 	printf("\n");
 	}
