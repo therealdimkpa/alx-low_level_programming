@@ -19,7 +19,7 @@ for (start = 0; start <= 9; start++)
 		if (start == 0)
 			printf("%i", result);
 		if (result > 10)
-			printf(",  %i,", result);
+			printf(",  %i", result);
 		else
 			printf(", %i", result);
 		}
