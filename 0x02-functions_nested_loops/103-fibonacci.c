@@ -2,9 +2,7 @@
 
 /**
 * main - entry
-* 
-*Return: 0
-*
+* Return: 0
 */
 
 int main(void)
@@ -24,19 +22,15 @@ int max_value = 4000000;
 /* stors the sum of all even fibonacci numbers */
 int sum_of_even = 2;
 
-/*printf("inital values: %li, %li\n", val1, val2);
-*printf("initial value of sum of evens: %i\n", sum_of_even);
-*/
-
 while (val2 < max_value)
-        {
-        lastvalue = val1 + val2;
-        val1 = val2;
-        val2 = lastvalue;
-	
+	{
+	lastvalue = val1 + val2;
+	val1 = val2;
+	val2 = lastvalue;
+
 	if ((val2 % 2 == 0) && (val2 < max_value))
 		sum_of_even += val2;
-        }
+	}
 
 printf("%i\n", sum_of_even);
 
