@@ -12,19 +12,19 @@ long int val1 = 1;
 
 long int val2 = 2;
 
-int count = 0;
+int count = 50;
 
-printf("%li, ", val1);
-printf("%li, ", val2);
+int item;
 
-while (count < 50)
+printf("%li, %li, ", val1);
+
+for (item = 3; item < count; item++)
 	{
 	int lastvalue = val1 + val2;
 
 	printf("%i, ", lastvalue);
 	val1 = val2;
 	val2 = lastvalue;
-	count++;
 	}
 
 return (0);
