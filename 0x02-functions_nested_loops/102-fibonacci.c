@@ -16,7 +16,7 @@ int count = 50;
 
 int item;
 
-printf("%li, %li, ", val1);
+printf("%li, %li, ", val1, val2);
 
 for (item = 3; item < count; item++)
 	{
