@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int n = 612852475143;
+	long int n = 612852475143;
 
 	int i;
 
