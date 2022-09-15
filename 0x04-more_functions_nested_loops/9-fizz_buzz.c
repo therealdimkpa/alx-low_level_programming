@@ -23,6 +23,6 @@ for (n = 1; n <= 100; n++)
 	else
 		printf(" %i", n);
 	}
-
+printf("\n");
 return (0);
 }
