@@ -2,10 +2,9 @@
 
 /**
 * fizz_buzz -	Prints numbers 1 to 100 in a special way
-* Return:		0 if successful
 */
 
-int fizz_buzz(void)
+void fizz_buzz(void)
 {
 int n;
 
@@ -24,5 +23,4 @@ for (n = 1; n <= 100; n++)
 		printf(" %i", n);
 	}
 printf("\n");
-return (0);
 }

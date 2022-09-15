@@ -14,6 +14,6 @@ void more_numbers(void);
 int print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
-int fizz_buzz(void);
+void fizz_buzz(void);
 
 #endif /* MAIN_H */
