@@ -2,6 +2,7 @@
 
 /**
 * main -	Prints numbers 1 to 100 in a special way
+* Return:	Alwasys 0
 */
 
 int main(void)
@@ -19,6 +20,8 @@ for (n = 1; n <= 100; n++)
 	else if (n % 3 == 0)
 		printf(" Fizz");
 
+	else if (n == 1)
+		printf("%i", n);
 	else
 		printf(" %i", n);
 	}
