@@ -1,43 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-* main - entry
-* Return: Always 0
+* main - entry point
+* Return: 0 (successful)
 */
 
 int main(void)
 {
-int j;
+	int n = 612852475143;
 
-j = 612852475143;
+	int i;
 
-int prime;
-int isprime = 1;
+	int x = n / 3;
 
-printf("testing %i\n", j);
+	int prime = 3;
 
-int i;
-
-for (i = 1231951; i > 0; i--)
+	for (i = 10; i <= x; i++)
 	{
-	if (1231952 % i == 0)
+		if ((n % i == 0) &&  i > prime)
 		{
-		printf("Found a factor of %i (%i)\n", j, i);
-		
-		int test;
-
-		for (test = 3; test < i; test+2)
-			{
-			printf("Checking if %i is prime", i); 
-			if (i % test == 0)
-				{
-				isprime = 0;
-				prime = i;
-				}
-		break;
-			}
+		prime = i;
 		}
-	if (isprime == 0)
-		break;
 	}
+printf("%d", prime);
 }
