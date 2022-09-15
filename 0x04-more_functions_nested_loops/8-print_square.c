@@ -22,7 +22,7 @@ else
 		while (width > 0)
 			{
 			_putchar('#');
-			width--;		
+			width--;
 			}
 		length--;
 		_putchar('\n');
