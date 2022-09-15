@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* fizz_buzz -	Prints numbers 1 to 100 in a special way
+* main -	Prints numbers 1 to 100 in a special way
 */
 
-void fizz_buzz(void)
+int main(void)
 {
 int n;
 
@@ -22,5 +22,7 @@ for (n = 1; n <= 100; n++)
 	else
 		printf(" %i", n);
 	}
+
 printf("\n");
+return (0);
 }
