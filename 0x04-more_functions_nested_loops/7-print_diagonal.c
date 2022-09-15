@@ -17,7 +17,7 @@ else
 		{
 		int laps = count;
 
-		while (laps > 0 )
+		while (laps > 0)
 			{
 			_putchar(' ');
 			laps--;
