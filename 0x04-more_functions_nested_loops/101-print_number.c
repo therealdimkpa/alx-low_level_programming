@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-unsigned int num = n;
+int num = n;
 _putchar(num + '0');
 _putchar('\n');
 }
