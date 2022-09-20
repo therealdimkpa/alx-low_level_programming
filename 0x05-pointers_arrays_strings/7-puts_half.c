@@ -36,7 +36,7 @@ len = _strlen(str);
 if (len / 2 == 0)
 	len = len / 2;
 else
-	len = (len + 1)/2;
+	len = (len + 1) / 2;
 
 for (i = len; i < length; i++)
 	{
