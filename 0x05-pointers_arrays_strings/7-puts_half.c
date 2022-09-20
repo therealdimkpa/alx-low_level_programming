@@ -32,7 +32,11 @@ int i;
 
 length = _strlen(str);
 len = _strlen(str);
-len = len / 2;
+
+if (len / 2 == 0)
+	len = len / 2;
+else
+	len = (len + 1)/2;
 
 for (i = len; i < length; i++)
 	{
