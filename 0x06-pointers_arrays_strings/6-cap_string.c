@@ -1,5 +1,6 @@
-include "main.h"
+#include "main.h"
 #include <string.h>
+
 /**
 *cap_string -	Capitalizes first char after punctuation
 *@s:			String to be worked on
@@ -28,4 +29,3 @@ for (i = 0; i < j; i++)
 
 return (ptr);
 }
-
