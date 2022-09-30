@@ -9,6 +9,11 @@
 
 int main(int argc, char *argv[])
 {
+	char c = *argv[0];
+
+	if (c == *argv[0])
+		c = *argv[0];
+
 	printf("%i\n", argc);
 	return (0);
 }
