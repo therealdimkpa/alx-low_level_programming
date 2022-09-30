@@ -18,9 +18,6 @@ int main(int argc, char *argv[])
 
 	else
 		{
-
-		int i;
-
 		int a = atol(argv[1]);
 		int b = atol(argv[2]);
 
