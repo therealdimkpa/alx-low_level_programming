@@ -1,8 +1,7 @@
 #include "main.h"
+
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
-#include <stddef.h>
 
 /**
 * string_nconcat -	Adds specific number of bytes of one string to another
@@ -18,6 +17,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 char *new;
 unsigned int i, j, len1, len2;
 
+if (s1 == NULL)
+	s1 = "";
+if (s2 == NULL)
+	s2 = "";
+
 len1 = strlen(s1);
 len2 = strlen(s2);
 
@@ -31,33 +35,17 @@ if (!new)
 
 i = 0;
 
-if (s1 != NULL)
-	{
-		while (s1[i] != '\0')
-		{
-			new[i] = s1[i];
-			i++;
-		}
-	}
-else
-	{
-	new[i] = ' ';
-	}
+while (s1[i] != '\0')
+{
+	new[i] = s1[i];
+	i++;
+}
 
 j = len1;
 
-if (s2 != NULL)
+for (i = 0; i < n; i++)
 	{
-	for (i = 0; i < n; i++)
-		{
-		new[j + i] = s2[i];
-		}
-	}
-
-else
-	{
-	new[j] = ' ';
-	new[j + 1] = '\0';
+	new[j + i] = s2[i];
 	}
 
 	return (new);
