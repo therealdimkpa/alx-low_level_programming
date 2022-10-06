@@ -20,6 +20,10 @@ if (nmemb == 0 || size == 0)
 else
 	{
 	ptr = malloc(size * nmemb);
-	return (ptr);
+
+	if (!ptr)
+		return (NULL);
+	else
+		return (ptr);
 	}
 }
