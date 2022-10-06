@@ -29,7 +29,6 @@ else
 
 		else
 			{
-			ptr = malloc(new_size);
 			ptr = store;
 			return (ptr);
 			}
