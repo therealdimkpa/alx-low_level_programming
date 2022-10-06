@@ -30,10 +30,18 @@ if (!new)
 	return (NULL);
 
 i = 0;
-while (s1[i] != '\0')
+
+if (s1 != NULL)
 	{
-	new[i] = s1[i];
-	i++;
+		while (s1[i] != '\0')
+		{
+			new[i] = s1[i];
+			i++;
+		}
+	}
+else
+	{
+	new[i] = ' ';
 	}
 
 j = len1;
@@ -52,5 +60,5 @@ else
 	new[j + 1] = '\0';
 	}
 
-return (new);
+	return (new);
 }
