@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 
 /**
 * string_nconcat -	Adds specific number of bytes of one string to another
