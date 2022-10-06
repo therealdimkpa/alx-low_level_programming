@@ -10,9 +10,7 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-int i;
 void *store = ptr;
-int size;
 
 if (new_size == 0 && ptr != NULL)
 	return (NULL);
@@ -31,11 +29,6 @@ else
 
 		else
 			{
-			if (old_size < new_size)
-				size =  old_size;
-			else
-				size = new_size;
-
 			ptr = malloc(new_size);
 			ptr = store;
 			return (ptr);
