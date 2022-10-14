@@ -15,7 +15,7 @@ if (size <= 0 || array == NULL || action == NULL)
 	return;
 else
 	{
-	unsigned int i = 0;
+	size_t i = 0;
 
 	for (; i < size; i++)
 		action(array[i]);
