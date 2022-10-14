@@ -15,7 +15,7 @@ else
 	{
 	int sum = 0;
 	va_list ap;
-	int i;
+	unsigned int i;
 
 	va_start(ap, n);
 
