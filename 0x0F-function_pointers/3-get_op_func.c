@@ -1,5 +1,11 @@
 #include "3-calc.h"
 
+/**
+* get_op_func -	Gets the function associated with a sign
+* @s:			The sign
+* Return:		The result of the calculation
+*/
+
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
@@ -9,7 +15,7 @@ op_t ops[] = {
 		{"/", op_div},
 		{"%", op_mod},
 		{NULL, NULL}
-    };
+};
 
 int i = 0;
 
