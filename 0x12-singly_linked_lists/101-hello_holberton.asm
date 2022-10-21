@@ -1,12 +1,12 @@
-; Prints "Hello, Holberton" to the screen. 
-; OS/X requires system call arguments to be pushed onto the stack in reversed 
-; order, with an extra 4 bytes (DWORD) at the end. 
+; Prints "Hello, Holberton" to the screen.
+; OS/X requires system call arguments to be pushed onto the stack in reversed
+; order, with an extra 4 bytes (DWORD) at the end.
 ;
-; Build with: 
+; Build with:
 ;   nasm -f macho hello.asm
 ;   ld -o hello hello.o
 ;
-; Run with: 
+; Run with:
 ;   ./hello
 ;
 ; Author: therealdimkpa
@@ -25,7 +25,7 @@ global start
 start:
 
     ; printing message, use write()
-    ; system call 4 syntax: 
+    ; system call 4 syntax:
     ; user_ssize_t write(int fd, user_addr_t cbuf, user_size_t nbyte)
     push dword MsgLen   ; length of message to print
     push dword Msg      ; message to print
@@ -40,6 +40,5 @@ start:
     sub esp, 4          ; OS/X requires extra 4 bytes after arguments
     mov eax, 1          ; 1 - sys_exit() system call
     int 80H             ; perform system call
-    ; no need to restore stack, code after this line will not be executed 
+    ; no need to restore stack, code after this line will not be executed
     ; (program exit)
-
