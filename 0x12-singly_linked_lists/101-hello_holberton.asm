@@ -9,7 +9,7 @@
 ; Run with:
 ;   ./hello
 ;
-; Author: therealdimkpa
+; Author: PotatoMaster101
 
 
 
