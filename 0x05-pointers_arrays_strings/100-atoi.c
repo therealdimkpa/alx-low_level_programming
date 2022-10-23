@@ -19,39 +19,32 @@ int sign;
 int len_of_int;
 int the_int;
 
-start = 0;
+start = -1;
 stop = 0;
 
 len = strlen(s);
 the_int = 0;
 
+
 for (i = 0; i < len; i++)
 	{
-	if (_isnumber(s[i]) == true && start == 0)
-		{
+	if (_isnumber(s[i]) == true && start == -1)
 		start = i;
-		}
-	if (_isnumber(s[i]) == true)
-		{
+	else if (_isnumber(s[i]) == true)
 		stop = i;
-		}
 	else if (start > 0 && _isnumber(s[i]) == false)
-		{
 		break;
-		}
 	else
 		continue;
 	}
 
-if (start != 0 && stop == 0)
-	stop = len - 1;
+if (stop == 0)
+	return (0);
 
 if (start == '0')
 	sign = 1;
-
 else if (s[start - 1] == '-')
 	sign = -1;
-
 else
 	sign = 1;
 
@@ -82,6 +75,13 @@ if (n >= '0' && n <= '9')
 	}
 return (false);
 }
+
+/**
+* _pow -	Gets the exponent of a number
+* @a:		The number to be raised to power
+* @b:		The number of times it should be raised to power
+* Return:	a ^ b
+*/
 
 int _pow(int a, int b)
 {
