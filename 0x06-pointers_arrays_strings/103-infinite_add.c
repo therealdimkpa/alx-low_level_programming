@@ -2,6 +2,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
 *infinite_add - function
 *@n1:char parameter
