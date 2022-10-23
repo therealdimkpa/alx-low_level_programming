@@ -9,22 +9,15 @@
 * Return:	Returns the integer value
 */
 
-int _atoi (char *s)
+int _atoi(char *s)
 {
-int start;
-int stop;
-int i;
-int len;
-int sign;
-int len_of_int;
-int the_int;
+int start, stop, i, len, sign, len_of_int, the_int;
 
 start = -1;
 stop = 0;
 
 len = strlen(s);
 the_int = 0;
-
 
 for (i = 0; i < len; i++)
 	{
@@ -34,6 +27,7 @@ for (i = 0; i < len; i++)
 		stop = i;
 	else if (start > 0 && _isnumber(s[i]) == false)
 		break;
+
 	else
 		continue;
 	}
@@ -49,11 +43,8 @@ else
 	sign = 1;
 
 len_of_int = stop - start + 1;
-
 for (i = start; i <= stop; i++, len_of_int--)
-	{
 	the_int += ((s[i] - '0') * _pow(10, len_of_int));
-	}
 
 the_int /= 10;
 the_int *= sign;
