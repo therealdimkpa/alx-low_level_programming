@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+* pop_listint -	Removes the first element of a list
+* @head:		Pointer to the first element of the list
+* Return:		Value (n) stored in the first element
+*/
+
 int pop_listint(listint_t **head)
 {
 	listint_t *tmp;
