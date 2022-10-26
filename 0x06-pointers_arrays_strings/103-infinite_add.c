@@ -21,7 +21,7 @@ if (strlen(n1) > strlen(n2))
 else
 	max = strlen(n2);
 
-if ((max + 1) >= (size_r))
+if ((max + 2) >= (size_r))
 	return (0);
 else
 	{
@@ -32,7 +32,7 @@ else
 
 	sum = num1 + num2;
 	printf("%i", sum);
-	*r = (char)sum;
+	*r = (char)(sum + '0');
 
 	return (r);
 	}
