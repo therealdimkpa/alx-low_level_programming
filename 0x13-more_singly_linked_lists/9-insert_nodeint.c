@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
-*
-*
-*
-*
+* insert_nodeint_at_index -	Inserts a node at a specified index
+* @head:					First element of the list
+* @idx;						Index the node should be added to
+* @n:						Value to be stored in the node
+* Return:					Pointer to the node
 */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -34,7 +35,7 @@ else
 			copy = copy->next;
 		}
 	new->next = copy->next;
-	copy-next = new;
+	copy->next = new;
 
 	return (new);
 	}
