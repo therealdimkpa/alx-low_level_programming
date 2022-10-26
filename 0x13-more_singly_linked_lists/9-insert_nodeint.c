@@ -3,7 +3,7 @@
 /**
 * insert_nodeint_at_index -	Inserts a node at a specified index
 * @head:					First element of the list
-* @idx;						Index the node should be added to
+* @idx:						Index the node should be added to
 * @n:						Value to be stored in the node
 * Return:					Pointer to the node
 */
@@ -31,6 +31,7 @@ else
 		{
 		if (copy == NULL || copy->next == NULL)
 			return (NULL);
+
 		else
 			copy = copy->next;
 		}
