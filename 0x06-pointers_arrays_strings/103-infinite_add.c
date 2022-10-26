@@ -14,9 +14,13 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int len1 = strlen(n1);
-int len2 = strlen(n2);
-int max =  len1 > len2 ? len1 : len2;
+int max;
+
+if (strlen(n1) > strlen(n2))
+	max = strlen(n1);
+else
+	max = strlen(n2);
+
 if ((max + 1) >= (size_r))
 	return (0);
 else
@@ -25,9 +29,10 @@ else
 
 	num1 = atoi(n1);
 	num2 = atoi(n2);
+
 	sum = num1 + num2;
 	printf("%i", sum);
-	*r = sum + '0';
+	*r = (char)sum;
 
 	return (r);
 	}
