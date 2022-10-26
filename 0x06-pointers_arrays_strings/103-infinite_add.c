@@ -25,13 +25,12 @@ if ((max + 2) >= (size_r))
 	return (0);
 else
 	{
-	int sum, num1, num2;
+	long int sum, num1, num2;
 
 	num1 = atoi(n1);
 	num2 = atoi(n2);
 
 	sum = num1 + num2;
-	printf("%i", sum);
 	*r = (char)(sum + '0');
 
 	return (r);
