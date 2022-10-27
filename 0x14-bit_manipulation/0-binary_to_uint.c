@@ -21,7 +21,7 @@ unsigned int rPow(int a, unsigned int b)
 * binary_to_uint -	Converts a string of binary numbers to unsigned int
 * @b:				Pointer to the string
 * Return:			The converted number
-*					0 if one or more characters in the string is 
+*					0 if one or more characters in the string is
 *						not 0 or 1
 *					0 if b is NULL
 */
@@ -47,7 +47,7 @@ unsigned int binary_to_uint(const char *b)
 
 			else
 				{
-				rValue += (((unsigned int )c - 48) *rPow(2, (len - loop)));
+				rValue += (((unsigned int)c - 48) * rPow(2, (len - loop)));
 				}
 			}
 		return (rValue);
