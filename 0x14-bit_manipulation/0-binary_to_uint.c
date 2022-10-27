@@ -9,7 +9,7 @@
 
 unsigned int rPow(int a, unsigned int b)
 	{
-	int i;
+	unsigned int i;
 	unsigned int v = 1;
 
 	for (i = 0; i < b; i++)
