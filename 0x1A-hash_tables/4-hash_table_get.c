@@ -14,21 +14,23 @@
 */
 
 char *hash_table_get(const hash_table_t *ht, const char *key) {
+    hash_node_t *current;
+    unsigned long int index;
+
     if (key == NULL || *key == '\0' || ht == NULL) {
-        return NULL; // Invalid key or hash table
+        return NULL; 
     }
 
-    unsigned long int index = key_index((const unsigned char *)key, ht->size);
+    index = key_index((const unsigned char *)key, ht->size);
 
-    hash_node_t *current = ht->array[index];
+    current = ht->array[index];
 
-    // Search for the key in the linked list at the calculated index
     while (current != NULL) {
         if (strcmp(current->key, key) == 0) {
-            return current->value; // Key found, return the associated value
+            return current->value;
         }
         current = current->next;
     }
 
-    return NULL; // Key not found, return NULL
+    return NULL;
 }

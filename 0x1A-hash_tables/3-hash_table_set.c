@@ -13,28 +13,31 @@
 */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value) {
+    hash_node_t *newNode;
+    hash_node_t *head;
+    hash_node_t *current;
+    unsigned long int index;
+
     if (key == NULL || *key == '\0' || ht == NULL) {
-        return 0; // Invalid key or hash table
+        return 0;
     }
 
-    unsigned long int index = key_index((const unsigned char *)key, ht->size);
+    index = key_index((const unsigned char *)key, ht->size);
 
-    hash_node_t *head = ht->array[index];
-
-    // Check if the key already exists in the list
-    hash_node_t *current = head;
+    head = ht->array[index];
+    current = head;
+    
     while (current != NULL) {
         if (strcmp(current->key, key) == 0) {
-            // Key found, update the value and return
             free(current->value);
             current->value = strdup(value);
-            return 1; // Successfully updated value for existing key
+            return 1;
         }
         current = current->next;
     }
 
-    // Key not found, create a new node and add at the beginning of the list
-    hash_node_t *newNode = malloc(sizeof(hash_node_t));
+
+    newNode = malloc(sizeof(hash_node_t));
     if (newNode == NULL) {
         perror("Memory allocation failed");
         return 0;
@@ -42,9 +45,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value) {
 
     newNode->key = strdup(key);
     newNode->value = strdup(value);
-    newNode->next = head; // Add the new node at the beginning of the list
-
-    ht->array[index] = newNode; // Update the hash table array with the new node
-
-    return 1; // Successfully added the key-value pair
+    newNode->next = head;
+    
+    ht->array[index] = newNode;
+    
+    return 1;
 }
